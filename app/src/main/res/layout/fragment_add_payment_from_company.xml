@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.AddPaymentFromCompanyFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="ايصال تسليم"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAddPaymentFromCompanyCompanyNameText"
+            android:text="اسم الشركة"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAddPaymentFromCompanyCompanyAddressText"
+            android:text="عنوان الشركة"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_toStartOf="@id/txtAddPaymentFromCompanyCompanyNameText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAddPaymentFromCompanyCompanyPhoneText"
+            android:text="هاتف الشركة"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignEnd="@id/txtAddPaymentFromCompanyCompanyAddressText"
+            android:layout_below="@id/txtAddPaymentFromCompanyCompanyAddressText"
+            />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAddPaymentFromCompanyDateSupplierText"
+            android:text="25/10/212111111"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="20dp"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAddPaymentFromCompanyCompanyPhoneText">
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtAddPaymentFromCompanySupplierAddress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المقيم في"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtAddPaymentFromCompanySupplierName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تسليم الى السيد"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.5"
+            android:text="ملاحظات"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/blue_sec_1"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.5"
+            android:text="مبلغ التسليم"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/blue_sec_1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtAddPaymentFromCompanyNotice"
+            android:layout_weight="0.5"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtAddPaymentFromCompanyTotalMoney"
+            android:layout_weight="1.5"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnAddPaymentFromCompanyCancel"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue_sec_1"
+            android:text="حذف"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnAddPaymentFromCompanySave"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue_sec_1"
+            android:text="حفظ"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

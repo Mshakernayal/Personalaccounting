@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.DailyMovementFragment">
+
+
+
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f1f1f1">
+
+            <TableRow
+                android:minHeight="30dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="ملاحظات"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@color/blue_sec_1" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="المبلغ"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@color/blue_sec_1" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="التفاصيل"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@color/blue_sec_1" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDailyMovementDetailsDay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttomBar"
+        android:layout_below="@id/table"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:spanCount="1" />
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fabDailyMovementAddToDay"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            app:elevation="2dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/add_24"
+            app:maxImageSize="40dp" />
+
+        <LinearLayout
+            android:id="@+id/buttomBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp">
+
+                    <ImageButton
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:id="@+id/btnDailyMovementDetailsDay"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        app:srcCompat="@drawable/grid_24" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="0dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp">
+
+                    <ImageButton
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:id="@+id/btnDailyMovementFinishDay"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        app:srcCompat="@drawable/send_24" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/second"
+            android:layout_above="@id/buttomBar"
+            android:layout_marginBottom="30dp">
+
+            <View
+                android:layout_width="110dp"
+                android:layout_height="0dp"/>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/fabDailyMovementPayment"
+                android:text="دفعة "
+                android:textAlignment="center"
+                android:gravity="center"
+                android:backgroundTint="@color/blue_sec_1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="invisible"/>
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="0dp"/>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/fabDailyMovementInvoice"
+                android:text="فاتورة "
+                android:textAlignment="center"
+                android:gravity="center"
+                android:backgroundTint="@color/blue_sec_1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/third"
+            android:layout_above="@+id/second"
+            android:layout_marginBottom="30dp">
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="0dp"/>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/fabDailyMovementSpends"
+                android:text="مصاريف "
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:backgroundTint="@color/blue_sec_1"
+                android:visibility="invisible"/>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="0dp"/>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/fabDailyMovementToCompany"
+                android:text="الى الشركة "
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:backgroundTint="@color/blue_sec_1"
+                android:visibility="invisible"/>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="0dp"/>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/fabDailyMovementFromCompany"
+                android:text="من الشركة "
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:backgroundTint="@color/blue_sec_1"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

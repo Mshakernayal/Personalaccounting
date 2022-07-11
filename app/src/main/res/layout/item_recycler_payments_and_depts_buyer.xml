@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f1f1">
+
+        <TableRow
+            android:minHeight="50dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:id="@+id/txtItemRecyclerPaymentsAndDeptBuyerDateText"
+                android:text="التاريخ"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:id="@+id/txtItemRecyclerPaymentsAndDeptBuyerPaymentFromCompanyText"
+                android:text="0"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:id="@+id/txtItemRecyclerPaymentsAndDeptBuyerInvoiceOnCompanyText"
+                android:text="0"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+
+    </TableLayout>
+
+</RelativeLayout>

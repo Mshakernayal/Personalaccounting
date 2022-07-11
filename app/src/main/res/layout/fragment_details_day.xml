@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.DetailsDayFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/txtDetailsDayDateDayText"
+            android:text="التارخ"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"/>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtDetailsDayDateDayText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/base"
+            android:layout_below="@id/txtDetailsDayDateDayText"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDetailsDayTotalInvoiceFromCompanyText"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/blue_sec_1"/>
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اجمالي الديون من الشركة"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/second"
+            android:layout_below="@id/base"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDetailsDayTotalInvoiceOnCompanyText"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/blue_sec_1"/>
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اجمالي الديون على الشركة"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/third"
+            android:layout_below="@id/second"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDetailsDayTotalPaymentFromCompanyText"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/blue_sec_1"/>
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اجمالي الدفعات من الشركة"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/forth"
+            android:layout_below="@id/third"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDetailsDayTotalPaymentToCompanyText"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/blue_sec_1"/>
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/invoiceform"
+                android:text="اجمالي الدفعات الى الشركة"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fifth"
+            android:layout_below="@id/forth"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDetailsDayTotalSpendsText"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/blue_sec_1"/>
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اجمالي المصاريف"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/fifth"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtDetailsDayTotalMoneyDayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/fifth"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

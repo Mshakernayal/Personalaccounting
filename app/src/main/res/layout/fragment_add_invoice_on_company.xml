@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.AddInvoiceOnCompanyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtAddInvoiceOnCompanyNumberInvoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/txtAddInvoiceOnCompanyDateInvoiceText"
+                    android:layout_centerVertical="true"
+                    android:text="الرقم"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAddInvoiceOnCompanyCompanyNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="اسم الشركة"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAddInvoiceOnCompanyCompanyAddressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toStartOf="@id/txtAddInvoiceOnCompanyCompanyNameText"
+                    android:text="عنوان الشركة"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAddInvoiceOnCompanyCompanyPhoneText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtAddInvoiceOnCompanyCompanyAddressText"
+                    android:layout_alignEnd="@id/txtAddInvoiceOnCompanyCompanyAddressText"
+                    android:text="هاتف الشركة"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAddInvoiceOnCompanyDateInvoiceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="25/10/212111111"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtAddInvoiceOnCompanyCompanyPhoneText">
+
+                    <EditText
+                        android:id="@+id/edtAddInvoiceOnCompanyBuyerLocation"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="المقيم في"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtAddInvoiceOnCompanyBuyerName"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:nextFocusForward="@id/edtAddInvoiceOnCompanyBuyerLocation"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="المطلوب من السيد"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/header"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:text="ملاحظات"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@color/blue_sec_1"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="20dp"
+                            android:text="مصروف"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@color/blue_sec_1"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="20dp"
+                            android:text="السعر"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@color/blue_sec_1"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="20dp"
+                            android:text="متر"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@color/blue_sec_1"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="20dp"
+                            android:text="العدد"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@color/blue_sec_1"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="20dp"
+                            android:text="نوع البضاعة ومواصفاتها"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@color/blue_sec_1"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="20dp"
+                            android:text="القيمة الاجمالية"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@color/blue_sec_1"
+                            android:gravity="center"
+                            android:layout_margin="1dp"/>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerAddInvoiceOnCompanyInvoiceDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/header"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:spanCount="1" />
+
+                </RelativeLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/base"
+            android:weightSum="2"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/btnAddInvoiceOnCompanyCancel"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue_sec_1"
+                android:text="حذف"
+                android:textStyle="bold"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/btnAddInvoiceOnCompanySave"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue_sec_1"
+                android:text="حفظ"
+                android:textStyle="bold"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:id="@+id/txtAddInvoiceOnCompanyFinishInvoice"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_above="@id/base" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fabAddInvoiceOnCompanyAddElement"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/add_24"
+            app:fabSize="mini"
+            android:layout_above="@id/base"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

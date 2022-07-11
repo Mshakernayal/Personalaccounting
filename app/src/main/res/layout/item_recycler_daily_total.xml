@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/txtItemRecyclerDailyTotalDateText"
+            android:text="التارخ"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"/>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtItemRecyclerDailyTotalDateText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/base"
+            android:layout_below="@id/txtItemRecyclerDailyTotalDateText"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtItemRecyclerDailyTotalTotalInvoiceFromCompanyText"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/blue_sec_1"/>
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اجمالي الديون من الشركة"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/second"
+            android:layout_below="@id/base"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtItemRecyclerDailyTotalTotalInvoiceOnCompanyText"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/blue_sec_1"/>
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اجمالي الديون على الشركة"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/third"
+            android:layout_below="@id/second"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtItemRecyclerDailyTotalTotalPaymentFromCompanyText"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/blue_sec_1"/>
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اجمالي الدفعات من الشركة"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/forth"
+            android:layout_below="@id/third"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtItemRecyclerDailyTotalTotalPaymentToCompanyText"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/blue_sec_1"/>
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اجمالي الدفعات الى الشركة"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fifth"
+            android:layout_below="@id/forth"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtItemRecyclerDailyTotalTotalSpendsText"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/blue_sec_1"/>
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اجمالي المصاريف"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/fifth"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtItemRecyclerDailyTotalTotalMoneyDayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fifth"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="اجمالي صندوق اليوم"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/companyInfoFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.personalaccounting.view.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_assignedMaterialAhadefFragment"
+            app:destination="@id/assignedMaterialAhadefFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_dailyMovementFragment"
+            app:destination="@id/dailyMovementFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_dailyTotalFragment2"
+            app:destination="@id/dailyTotalFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_paymentAndDeptNames"
+            app:destination="@id/paymentAndDeptNames" />
+        <action
+            android:id="@+id/action_mainFragment_to_tobelPriceFragment"
+            app:destination="@id/totalPriceFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_wareHouseFragment"
+            app:destination="@id/wareHouseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/assignedMaterialAhadefFragment"
+        android:name="com.example.personalaccounting.view.fragment.AssignedMaterialAhadefFragment"
+        android:label="fragment_assigned_material_ahadef"
+        tools:layout="@layout/fragment_assigned_material_ahadef" >
+        <action
+            android:id="@+id/action_assignedMaterialAhadefFragment_to_assignedMaterialAlsedahFragment"
+            app:destination="@id/assignedMaterialAlsedahFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/assignedMaterialAlsedahFragment"
+        android:name="com.example.personalaccounting.view.fragment.AssignedMaterialAlsedahFragment"
+        android:label="fragment_assigned_material_alsedah"
+        tools:layout="@layout/fragment_assigned_material_alsedah" >
+        <action
+            android:id="@+id/action_assignedMaterialAlsedahFragment_to_assignedMaterialExtraFragment"
+            app:destination="@id/assignedMaterialExtraFragment" />
+        <argument
+            android:name="alhadefPrice"
+            app:argType="float" />
+    </fragment>
+    <fragment
+        android:id="@+id/assignedMaterialExtraFragment"
+        android:name="com.example.personalaccounting.view.fragment.AssignedMaterialExtraFragment"
+        android:label="fragment_assigned_material_extra"
+        tools:layout="@layout/fragment_assigned_material_extra" >
+        <action
+            android:id="@+id/action_assignedMaterialExtraFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="khamMeterPrice"
+            app:argType="float" />
+    </fragment>
+    <fragment
+        android:id="@+id/dailyMovementFragment"
+        android:name="com.example.personalaccounting.view.fragment.DailyMovementFragment"
+        android:label="fragment_daily_movement"
+        tools:layout="@layout/fragment_daily_movement" >
+        <action
+            android:id="@+id/action_dailyMovementFragment_to_addInvoiceFromCompanyFragment"
+            app:destination="@id/addInvoiceFromCompanyFragment" />
+        <action
+            android:id="@+id/action_dailyMovementFragment_to_addInvoiceOnCompanyFragment"
+            app:destination="@id/addInvoiceOnCompanyFragment" />
+        <action
+            android:id="@+id/action_dailyMovementFragment_to_addPaymentFromCompanyFragment"
+            app:destination="@id/addPaymentFromCompanyFragment" />
+        <action
+            android:id="@+id/action_dailyMovementFragment_to_addPaymentToCompanyFragment"
+            app:destination="@id/addPaymentToCompanyFragment" />
+        <action
+            android:id="@+id/action_dailyMovementFragment_to_addSpendFragment"
+            app:destination="@id/addSpendFragment" />
+        <action
+            android:id="@+id/action_dailyMovementFragment_to_detailsDayFragment"
+            app:destination="@id/detailsDayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addInvoiceFromCompanyFragment"
+        android:name="com.example.personalaccounting.view.fragment.AddInvoiceFromCompanyFragment"
+        android:label="fragment_add_invoice_from_company"
+        tools:layout="@layout/fragment_add_invoice_from_company" >
+        <action
+            android:id="@+id/action_addInvoiceFromCompanyFragment_to_dailyMovementFragment"
+            app:destination="@id/dailyMovementFragment"
+            app:popUpTo="@id/dailyMovementFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addInvoiceOnCompanyFragment"
+        android:name="com.example.personalaccounting.view.fragment.AddInvoiceOnCompanyFragment"
+        android:label="fragment_add_invoice_on_company"
+        tools:layout="@layout/fragment_add_invoice_on_company" >
+        <action
+            android:id="@+id/action_addInvoiceOnCompanyFragment_to_dailyMovementFragment"
+            app:destination="@id/dailyMovementFragment"
+            app:popUpTo="@id/dailyMovementFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPaymentFromCompanyFragment"
+        android:name="com.example.personalaccounting.view.fragment.AddPaymentFromCompanyFragment"
+        android:label="fragment_add_payment_from_company"
+        tools:layout="@layout/fragment_add_payment_from_company" >
+        <action
+            android:id="@+id/action_addPaymentFromCompanyFragment_to_dailyMovementFragment"
+            app:destination="@id/dailyMovementFragment"
+            app:popUpTo="@id/dailyMovementFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPaymentToCompanyFragment"
+        android:name="com.example.personalaccounting.view.fragment.AddPaymentToCompanyFragment"
+        android:label="fragment_add_payment_to_company"
+        tools:layout="@layout/fragment_add_payment_to_company" >
+        <action
+            android:id="@+id/action_addPaymentToCompanyFragment_to_dailyMovementFragment"
+            app:destination="@id/dailyMovementFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSpendFragment"
+        android:name="com.example.personalaccounting.view.fragment.AddSpendFragment"
+        android:label="fragment_add_spend"
+        tools:layout="@layout/fragment_add_spend" >
+        <action
+            android:id="@+id/action_addSpendFragment_to_dailyMovementFragment"
+            app:destination="@id/dailyMovementFragment"
+            app:popUpTo="@id/dailyMovementFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsDayFragment"
+        android:name="com.example.personalaccounting.view.fragment.DetailsDayFragment"
+        android:label="fragment_details_day"
+        tools:layout="@layout/fragment_details_day" >
+        <action
+            android:id="@+id/action_detailsDayFragment_to_dailyMovementFragment"
+            app:destination="@id/dailyMovementFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/dailyTotalFragment2"
+        android:name="com.example.personalaccounting.view.fragment.DailyTotalFragment"
+        android:label="fragment_daily_total"
+        tools:layout="@layout/fragment_daily_total" >
+        <action
+            android:id="@+id/action_dailyTotalFragment2_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentAndDeptNames"
+        android:name="com.example.personalaccounting.view.fragment.PaymentAndDeptNames"
+        android:label="fragment_payment_and_dept_names"
+        tools:layout="@layout/fragment_payment_and_dept_names" >
+        <action
+            android:id="@+id/action_paymentAndDeptNames_to_paymentAndDeptBuyerFragment"
+            app:destination="@id/paymentAndDeptBuyerFragment" />
+        <action
+            android:id="@+id/action_paymentAndDeptNames_to_paymentAndDeptSupplierFragment"
+            app:destination="@id/paymentAndDeptSupplierFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentAndDeptBuyerFragment"
+        android:name="com.example.personalaccounting.view.fragment.PaymentAndDeptBuyerFragment"
+        android:label="fragment_payment_and_dept_buyer"
+        tools:layout="@layout/fragment_payment_and_dept_buyer" >
+        <action
+            android:id="@+id/action_paymentAndDeptBuyerFragment_to_paymentAndDeptNames"
+            app:destination="@id/paymentAndDeptNames"
+            app:popUpTo="@id/paymentAndDeptNames"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentAndDeptSupplierFragment"
+        android:name="com.example.personalaccounting.view.fragment.PaymentAndDeptSupplierFragment"
+        android:label="fragment_payment_and_dept_supplier"
+        tools:layout="@layout/fragment_payment_and_dept_supplier" >
+        <action
+            android:id="@+id/action_paymentAndDeptSupplierFragment_to_paymentAndDeptNames"
+            app:destination="@id/paymentAndDeptNames"
+            app:popUpTo="@id/paymentAndDeptNames"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/totalPriceFragment"
+        android:name="com.example.personalaccounting.view.fragment.TotalPriceFragment"
+        android:label="fragment_total_price"
+        tools:layout="@layout/fragment_tobel_price" >
+        <action
+            android:id="@+id/action_totalPriceFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/wareHouseFragment"
+        android:name="com.example.personalaccounting.view.fragment.WareHouseFragment"
+        android:label="fragment_ware_house"
+        tools:layout="@layout/fragment_ware_house" >
+        <action
+            android:id="@+id/action_wareHouseFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/companyInfoFragment"
+        android:name="com.example.personalaccounting.view.fragment.CompanyInfoFragment"
+        android:label="fragment_company_info"
+        tools:layout="@layout/fragment_company_info" >
+        <action
+            android:id="@+id/action_companyInfoFragment_to_companyMoneyInfoFragment"
+            app:destination="@id/companyMoneyInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/companyMoneyInfoFragment"
+        android:name="com.example.personalaccounting.view.fragment.CompanyMoneyInfoFragment"
+        android:label="fragment_company_money_info"
+        tools:layout="@layout/fragment_company_money_info" >
+        <action
+            android:id="@+id/action_companyMoneyInfoFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

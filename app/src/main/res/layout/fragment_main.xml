@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.MainFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/blue_prim_3" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:text="المحاسب الشخصي"
+        android:layout_margin="12dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title_view"/>
+
+
+
+    <GridLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:layout_below="@id/title_view">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/CardViewMainTotalDays"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_row="0">
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:src="@drawable/article_24"
+                    />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="الاجمالي اليومي"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/CardViewMainDailyMovement"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_row="0">
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:src="@drawable/compare_arrows"
+                    />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="الحركة اليومية"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/CardViewMainPricesTables"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_row="1">
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:src="@drawable/grid_24"
+                    />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="جداول الاسعار"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/CardViewMainPaymentsAndDept"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_row="1">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:src="@drawable/payments_24"
+                    />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="الديون والدفعات"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/CardViewMainAssignmentMaterial"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_row="2">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:src="@drawable/money_24"
+                    />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="تكليف مادة"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/CardViewMainWareHouse"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_row="2">
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:src="@drawable/warehouse_24"
+                    />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="المستودع"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ver 1.0.0"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
